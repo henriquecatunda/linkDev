@@ -121,11 +121,11 @@
       display: grid;
       grid-template-columns: repeat(1, 300px);
       grid-template-rows: repeat(2, 80px);
-      margin-bottom: 45px;
+      margin-bottom: 28px;
     }
 
     .container-flex {
-        margin-top: 41px;
+        margin-top: 25px;
     }
 
     .container-grid .card .icons{
