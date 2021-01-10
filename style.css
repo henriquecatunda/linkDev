@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+  }
+  
+  body {
+    background: #262626;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+  }
+  
+  .imagem {
+    display: inline-block;
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+   
+  }
+  
+  .imagem img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    font-weight: 700;
+    margin-top: 15px;
+    color:  #02BDF8;
+  }
+  
+  .user {
+    margin: 5px;
+    margin-top: 5px;
+    color: #DEDEDE;
+  }
+
+  .container-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(2, 85px);
+    justify-content: center;
+    align-content: center;
+    grid-gap: 20px;
+    margin-top: 40px;
+    transition: .5s;
+    text-transform: capitalize;
+  }
+  
+  .container-grid .card {
+    display: flex;
+    align-items: center;
+
+ 
+    background: #333333;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+
+  }
+
+  .card:hover{
+    background: #808080;
+    transition: .5s;
+  }
+
+  .container-grid .card .icons{
+    width: 112px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(91.18deg, #29B6D1 0.12%, #02BDF8 70.06%);
+    border-radius: 10px 0px 0px 10px;
+    
+  }
+  .container-grid .card:hover .icons{
+    background: linear-gradient(91.18deg, #0E6F82 0.12%, #64CCE0 0.13%, #5ECCEF 70.06%);
+    transition: .5s;
+  }
+
+  .container-grid .card a{
+      width: 320px ;
+     text-align: center;
+     text-decoration: none;
+     display: flex;
+  
+}
+
+.container-grid .card p{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.fa-github,
+.fa-linkedin-in,
+.fa-instagram,
+.fa-briefcase {
+  font-size: 2.1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 300px);
+      grid-template-rows: repeat(2, 80px);
+      margin-bottom: 45px;
+    }
+
+    .container-flex {
+        margin-top: 41px;
+    }
+
+    .container-grid .card .icons{
+        height: 80px;
+    }
+
+    .imagem img {
+        display: block;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+      
+    .name {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+      
+    .user {
+       margin: 5px;
+       color: #DEDEDE;
+       font-size: 18px;
+       margin-top: 6px;
+    }
+
+    .fa-github,
+    .fa-linkedin-in,
+    .fa-instagram,
+    .fa-briefcase {
+    font-size: 1.8em;
+    }
+
+
+  }
